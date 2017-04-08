@@ -2,7 +2,7 @@ class GroupsController < ApplicationController
   before_action :authenticate_user! , only: [:new, :create]
 
   def index
-    @group = Group.all
+    @groups = Group.all
   end
 
   def show
